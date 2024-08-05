@@ -1,0 +1,67 @@
+# Archivos de configuración
+.env
+
+# Directorios de paquetes
+node_modules/
+vendor/
+jspm_packages/
+
+
+# Archivos de base de datos MongoDB
+mongod.lock
+*.wt
+*.wtjournal
+
+# Archivos de log
+*.log
+log/
+logs/
+
+# Archivos temporales
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.swp
+*.swn
+*.swo
+*.swk
+*.bak
+*.sass-cache
+*.scss-cache
+.cache/
+.tmp/
+.temp/
+.tsdrc
+*.pid
+*.seed
+*.pid.lock
+
+# Directorios de caché
+.cache/
+__pycache__/
+
+# Archivos de cookies
+*.cookie
+
+# Archivos de sesión
+*.sess
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de compilación
+*.o
+*.pyc
+*.class
+*.dll
+*.exe
+
+# Analisis de datos
+*.py
+
+
+*.email.test.js
+

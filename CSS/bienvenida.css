@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.logged-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #d68585;
+  font-size: 24px;
+}
+
+
+.imagen-bienvenida {
+  max-width: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+  position: relative; /* Cambia a relative */
+  top: 0;
+  left: 0;
+  z-index: -1;
+  margin: 0 auto;
+   /* Agrega esto */
+
+}
+
+.fade-out-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-out {
+  animation: slideOut 1s forwards;
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .imagen-bienvenida {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .imagen-bienvenida {
+    height: 30vh;
+  }
+}

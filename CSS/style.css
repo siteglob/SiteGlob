@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+
+
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #007ffe,#ffffff,#007ffe);
+
+}
+
+header {
+ background-color: #83b9d8a2;
+ padding: 20px;
+ color: #ffffff;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to left, #0077b6, #6833ad);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration:none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #0077b6;
+}
+
+.burguer-menu-icon{
+    display: none;
+    cursor: pointer;
+
+}
+
+.burguer-menu-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .burguer-menu-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .burguer-menu-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .burguer-menu-icon div {
+        width: 20px;
+        height: 2px;
+    }
+}
+
+@media (max-width: 768px) {
+    .burguer-menu-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .burguer-menu-icon div {
+        width: 15px;
+        height: 1.5px;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
+
+main {
+    padding: 50px;
+    text-align: center;
+
+}
+
+h1 {
+
+    text-align: center;
+    color: #eff0f1;
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+    font-size: 36px;
+    margin-bottom: 20px;
+
+}
+
+h2 {
+    color: #1e0968;
+}
+
+h3 {
+    color: #8BC34A;
+}
+
+p {
+    letter-spacing: 0.1em;
+  
+}
+
+p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section {
+   
+    background: linear-gradient(to bottom, #003366, #ffffff);   
+
+}
+
+
+/* Estilos para las imagenes */
+.img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    margin: 0 auto;
+    width: 100px; /* Cambia esto al tamaño que prefieras */
+    height: auto;
+    border-radius: 50%;
+}
+
+
+
+
+.logo-3d {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.logo-3d:hover {
+    transform: scale(1.2);
+}
+
+.logo-3d:active {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 80%;
+    }
+}
+
+
+
+
+/* Estilos para los botones */
+.boton {
+    display: inline-block;
+    background-color: #7c7c7fa2;
+    color: #00eeff;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilos para los botones al pasar el cursor */
+.boton:hover {
+    background-color: #eb9955;
+}
+
+/* Estilos para los botones al pulsar */
+.boton:active {
+    background-color: #2ce3b8;
+}
+
+/* Estilos para el logotipo del botón */
+.boton img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+    width: 130px; /* Tamaño de la imagen */
+    height: 130px; /* Tamaño de la imagen */
+
+
+}
+
+/* Estilos para el logotipo del botón al pasar el cursor */
+.boton:hover img {
+    transform: scale(1.5);
+}
+
+
+   
+button{
+    background-color: #70ae29;
+    color: #fff;
+    padding: 8px 17px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+
+
+
+      
+}
+
+
+.boton-3d {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transition: transform 0.8s;
+}
+
+.boton-3d:hover {
+    transform: scale(1.2);
+}
+
+.boton-3d:active {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+}
+
+.boton-3d:focus {
+    outline: none;
+}
+
+.imagen-grande {
+  width: 100%; /* ajusta el ancho según tus necesidades */
+  height: auto; /* mantiene la relación de aspecto original de la imagen */
+}
+
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #003366;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ffcc00;
+}

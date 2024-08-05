@@ -1,0 +1,135 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  
+    }
+
+body{
+    background-color: #1685bd;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #1685bd;
+    background-image: radial-gradient(  
+        circle farthest-corner at 10% 20%,
+        rgba(174, 150, 14, 0.591) 0%,
+        rgba(77, 61, 179, 0.745) 100%
+        
+    );
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+   
+}
+
+header {
+    background-color: #83b9d8a2;
+    padding: 20px;
+    color: #ffffff;
+    border-end-end-radius: 50em;
+}
+
+
+
+.boton-1 {  
+    background-image: radial-gradient(
+        circle farthest-corner at 10% 20%,
+        rgba(174, 150, 14, 0.591) 0%,
+        rgba(77, 61, 179, 0.745) 100%
+        
+    );
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 50px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.boton-1:hover {
+    background-color: #0080ff;
+}
+
+.boton-2 {
+    background-image: radial-gradient(
+        circle farthest-corner at 10% 20%,
+        rgba(174, 150, 14, 0.591) 0%,
+        rgba(77, 61, 179, 0.745) 100%
+        
+    );
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 50px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}   
+
+.boton-2:hover {
+    background-color: #0080ff;
+}   
+
+.boton-3 {
+    background-image: radial-gradient(  
+        circle farthest-corner at 10% 20%,
+        rgba(174, 150, 14, 0.591) 0%,
+        rgba(77, 61, 179, 0.745) 100%
+        
+    );  
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 50px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.boton-3:hover {
+    background-color: #0080ff;
+}   
+
+
+@media (max-width: 768px) {
+    header {
+      padding: 10px;
+    }
+  
+    .boton {
+      font-size: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      padding: 5px;
+    }
+  
+    .boton {
+      font-size: 20px;
+    }
+  }
