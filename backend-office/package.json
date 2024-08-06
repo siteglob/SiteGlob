@@ -1,0 +1,41 @@
+{
+  "name": "backendon",
+  "version": "1.0.0",
+  "description": "Configuración Backend ",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon ",
+    "start": "node --watch src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siteglob/SiteGlob.git"
+  },
+  "keywords": [
+    "\"integracion\"",
+    "\"plataformas\"",
+    "\"negocios\""
+  ],
+  "author": "Angel Danilo Campos Hurtado",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/siteglob/SiteGlob/issues"
+  },
+  "homepage": "https://github.com/siteglob/SiteGlob#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1659.0",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.1",
+    "nodemailer": "^6.9.14",
+    "nodemon": "^3.1.4"
+  }
+}

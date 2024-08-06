@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body>
+    <h1>Registro</h1>
+    <div class="min-h-screen flex items-center justify-center bg-gray-100">
+        <div class="bg-white p-8 rounded shadow-md w-96">
+            <h2 class="text-2xl font-bold mb-6 text-center">Registro de Usuarios</h2>
+            <form id="registerForm">
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="username">Nombre de usuario</label>
+                    <input type="text" id="username" class="w-full p-2 border border-gray-300 rounded mt-1" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="email">Correo electrónico</label>
+                    <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded mt-1" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="password">Contraseña</label>
+                    <input type="password" id="password" class="w-full p-2 border border-gray-300 rounded mt-1" required>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Registrarse</button>
+            </form>
+            <p class="mt-4 text-center">¿Ya tienes una cuenta? <a href="login.html" class="text-blue-500">Iniciar sesión</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', async (event) => {
+            event.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            try {
+                const response = await fetch('http://localhost:3000/api/auth/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ username, email, password })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    alert('Registro exitoso');
+                    window.location.href = 'login.html';
+                } else {
+                    alert(data.message);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Ocurrió un error al registrar el usuario');
+            }
+        });
+    </script>
+</body>
+</html>

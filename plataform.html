@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SiteGlob</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+
+
+      <div class="logo">
+        <img src="img/logos/logsite .jpg" class="logo-3d" alt="Imagen de marketing digital">
+      </div>
+
+
+
+
+
+      <div class="search-bar">
+
+        <input type="text" placeholder="Buscar...">
+
+        <!--<div class="search-icon"><i class="fas fa-search"></i></div>-->
+
+        <button type="submit">Buscar</button>
+
+      </div>
+
+
+      <div>
+        <ul class="logged-links">
+          <div class="logged-icon">
+            <i class="fas fa-user"></i>
+        
+          <li><a href="cuenta.html">Mi Cuenta</a></li>
+          <!--<li><a href="logout.html">Cerrar Sesión</a></li>-->
+            </div>
+      </div>
+
+      <ul class="menu-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosotros-contacto/nosotros.html">Sobre nosotros</a></li>
+        <li><a href="nosotros-contacto/contacto.html">Contacto</a></li>
+
+        <li><a href="cart.html">Coche</a>
+          <div class="cart-icon"><i class="fas fa-shopping-cart"></i>
+          </div>
+        </li>
+
+      </ul>
+
+
+
+
+      <h2>*Construye* *Impulsa* *Conecta*</h2>
+    </nav>
+  </header>
+
+
+  <main>
+    <div class="burger-menu-icon">
+      <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div class="burger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+
+
+    <aside>
+
+      <h5>Empresas Afiliadas</h5>
+      </div>
+      <button class="boton" onclick="window.open('https://siteglob.github.io/ShopMayta', '_blank')">
+        <img src="img/tetraedro.png" alt="Logotipo de ShopMayta">
+      </button>
+
+
+      <button class="boton" onclick="window.open('https://siteglob.github.io/CampusHiggsStudy/', '_blank')">
+        <img src="img/logos/logo campus higgs.jpg" alt="Logotipo de Campus Higgs">
+      </button>
+
+      <button class="boton" onclick="window.open('https://siteglob.github.io/AlquimiaAcademy/', '_blank')">
+        <img src="img/logos/alquimia teatro img.jpg" alt="Logotipo de Alquimia">
+      </button>
+
+
+
+      <div>
+        <audio id="myAudio" autoplay loop>
+          <source src="mp3/melodyloops-preview-business-theme-2m30s.mp3" type="audio/mp3">
+        </audio>
+
+
+        <i class="fas fa-play"></i>
+        <i class="fas fa-pause"></i>
+        <script>
+          var audio = document.getElementById("myAudio");
+
+          function playAudio() {
+            audio.play();
+          }
+
+          function pauseAudio() {
+            audio.pause();
+          }
+
+          // Agrega eventos de clic a los íconos de Font Awesome
+          var playButton = document.querySelector('.fas.fa-play');
+          var pauseButton = document.querySelector('.fas.fa-pause');
+
+          playButton.addEventListener('click', playAudio);
+          pauseButton.addEventListener('click', pauseAudio);
+        </script>
+      </div>
+      <h2>Marketing digital para tus negocios</h2>
+      <section>
+
+        <div class="logo">
+          <img src="img/logos/logsite .jpg" class="logo-3d" alt="Imagen de marketing digital">
+        </div>
+
+
+
+      </section>
+
+      <img src="img/5.png" class="imagen-grande" alt="Descripción de la imagen">
+
+
+
+
+
+  </main>
+
+  <script src="js/script.js"></script>
+  <script src="js/cookies.js"></script>
+  <footer>
+    <!--contenido de footer-->
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Acerca de nosotros</h4>
+            <p>Plataforma SiteGlob una empresa perteneciente a "GEM" \ Grupo Empresarial Mayta</p>
+            <ul class="list-unstyled">
+              <li><a href="https://www.facebook.com/share/Ucb7QENeydVnwPh5/?mibextid=qi2Omg" target="_blank"><i
+                    class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+              <li><a href="https://x.com/GlobSite?s=08" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
+                  Twitter</a></li>
+              <li><a href="https://www.instagram.com/siteglob?utm_source=qr&igsh=OGU0MmVlOWVjOQ==" target="_blank"><i
+                    class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Políticas y Términos</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Contacto</h5>
+            <ul class="list-unstyled">
+              <li><i class="fa fa-map-marker" aria-hidden="true"></i> Dirección: Av. Galo Plaza Lasso 6993 y
+                Bellavista, Quito-Ec.</li>
+              <!--botton whatsapp-->
+              <li><a href="https://api.whatsapp.com/send?phone +593978791749=" target="_blank"><i class="fa fa-whatsapp"
+                    aria-hidden="true"></i> WhatsApp</a></li>
+              <li><i class="fa fa-envelope" aria-hidden="true"></i> Email: <a
+                  href="mailto:info@example.com">siteglob@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center">&copy; 2023 sitio web. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <p>&copy; 2020 SiteGlob. Todos los derechos reservados.</p>
+
+
+  </footer>
+
+
+</body>
+
+</html>

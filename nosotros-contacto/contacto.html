@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - SiteGlob</title>
+  <link rel="stylesheet" href="css/contactos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosotros.html">Sobre nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Contacto</h2>
+      <form action="#" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name
+          placeholder="Ingresa tu nombre">
+
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name
+          placeholder="Ingresa tu correo">
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name
+          placeholder="Ingresa tu mensaje"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Ubicación</h2>
+      <iframe
+      src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=SiteGlob"
+      width="600" height="450" style="border:0;" allowfullscreen></iframe>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2022 SiteGlob. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+
+</html>
+
+<!-- Replace YOUR_API_KEY with your actual Google Maps API key -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
+<script src="js/script.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+<script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+<script src="js/contacto.js">
+    // Add your JavaScript code here for the contact form validation and submission event handler.
+    // Example:
+    // document.getElementById('contactForm').addEventListener('submit', function(event) {
+    //   event.preventDefault();
+    //   // Get form inputs
+    //   const name = document.getElementById('name').value;
+    //   const email = document.getElementById('email').value;
+    //   const message = document.getElementById('message').value;
+    //
+    //   // Validate form inputs
+    //   if (name === '' || email === '' || message === '') {
+    //     Swal.fire({
+    //       icon: 'error',
+    //       title: 'Error',
+    //       text: 'Todos los campos son obligatorios.',
+    //     });
+    //     return;
+    //   }
+    //
+    //   // Submit form to server
+    //   // Example:
+    //   // fetch('/submit-contact', {
+    //
+</script>
+
+
+

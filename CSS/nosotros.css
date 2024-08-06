@@ -1,0 +1,73 @@
+/*pagina nosotros*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+
+}
+
+body {
+    background-image: radial-gradient(
+        circle farthest-corner at 10% 20%,
+        rgba(221, 164, 42, 0.591) 0%,
+        rgba(78, 59, 199, 0.745) 100%
+        );
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+    
+header {
+    background-color: #83b9d8a2;
+    padding: 20px;
+    color: #ffffff;
+   }
+    
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #0077b6, #0099cc);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #dbcdcd;
+    text-decoration: none;      
+    padding: 5px 10px;
+}
+    
+main {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    text-align: center;
+}
+
+section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi cuenta</title>
+</head>
+<html>
+
+<li><a href="login.html">Iniciar sesión</a></li>
+
+<h1>Bienvenido a tu cuenta</h1>
+
+
+
+<form id="miCuentaForm" action="/guardarDatosUsuario" method="POST">
+        <h2>Mi cuenta</h2>
+        <p>Usuario: <input type="text" name="usuario"></p>
+        <p>Contraseña: <input type="password" name="contraseña"></p>
+        <h2>Tus datos</h2>
+        <p>Nombre: <input type="text" name="nombre"></p>
+        <p>Apellidos: <input type="text" name="apellidos"></p>
+        <p>Dirección: <input type="text" name="direccion"></p>
+        <p>Localidad: <input type="text" name="localidad"></p>
+        <p>CP: <input type="text" name="cp"></p>
+        <p>Provincia: <input type="text" name="provincia"></p>
+        <p>Email: <input type="email" name="email"></p>
+        <p>Teléfono: <input type="text" name="telefono"></p>
+        <p>Contraseña: <input type="password" name="contraseña"></p>
+        <p>Confirmar contraseña: <input type="password" name="confirmarContraseña"></p>
+       
+          <!-- Agrega más campos según tus necesidades -->
+        <button type="submit">Guardar datos</button>
+</form>
+
+</body>
+
+</html>

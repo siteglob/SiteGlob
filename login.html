@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body>
+     
+    <div class="min-h-screen flex items-center justify-center bg-gray-100">
+        <div class="bg-white p-8 rounded shadow-md w-96">
+            <h2 class="text-2xl font-bold mb-6 text-center">Inicio de Sesión</h2>
+            <form id="loginForm" action="inicio.html" method="get">
+                <div class="mb-4">
+
+                    
+                    <label class="block text-gray-700" for="email">Correo electrónico</label>
+                    
+                    <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded mt-1" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="password">Contraseña</label>
+                    <input type="password" id="password" class="w-full p-2 border border-gray-300 rounded mt-1" required>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Iniciar sesión</button>
+            </form>
+            <p class="mt-4 text-center">¿No tienes una cuenta? <a href="register.html" class="text-blue-500">Registrarse</a></p>
+        </div>
+    </div>
+    <script>
+        // Agregamos un evento de submit al formulario
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            // Prevenimos el comportamiento por defecto del formulario
+            event.preventDefault();
+            // Obtenemos los valores de los campos de texto
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            // Redirigimos a la página de inicio
+            window.location.href = 'bienvenida.html';
+        });
+    </script>
+</body>
+</html>
