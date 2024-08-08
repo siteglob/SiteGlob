@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
 </head>
 <body>
-    <h1>Registro</h1>
     <div class="min-h-screen flex items-center justify-center bg-gray-100">
         <div class="bg-white p-8 rounded shadow-md w-96">
             <h2 class="text-2xl font-bold mb-6 text-center">Registro de Usuarios</h2>
@@ -23,49 +22,45 @@
                 <div class="mb-4">
                     <label class="block text-gray-700" for="password">Contraseña</label>
                     <input type="password" id="password" class="w-full p-2 border border-gray-300 rounded mt-1" required>
+                    <button id="show-password" class="text-gray-600 hover:text-gray-900 transition duration-300 ease-in-out">Mostrar</button>
                 </div>
-                <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Registrarse</button>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="confirmPassword">Confirmar contraseña</label>
+                    <input type="password" id="confirmPassword" class="w-full p-2 border border-gray-300 rounded mt-1" required>
+                    <button id="show-confirm-password" class="text-gray-600 hover:text-gray-900 transition duration-300 ease-in-out">Mostrar</button>
+                </div>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Registrarse</button>
             </form>
-            <p class="mt-4 text-center">¿Ya tienes una cuenta? <a href="login.html" class="text-blue-500">Iniciar sesión</a></p>
         </div>
     </div>
 
     <script>
-        document.getElementById('registerForm').addEventListener('submit', async (event) => {
-            event.preventDefault();         
-            
-            const username = document.getElementById('username').value;
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
+        const showPasswordButton = document.getElementById('show-password');
+        const passwordInput = document.getElementById('password');
+        const showConfirmPasswordButton = document.getElementById('show-confirm-password');
+        const confirmPasswordInput = document.getElementById('confirmPassword');
 
-            try {
-                const response = await fetch('http://localhost:3000/api/auth/register', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ username, email, password })
-                });
+        showPasswordButton.addEventListener('click', () => {
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                showPasswordButton.textContent = 'Ocultar';
+            } else {
+                passwordInput.type = 'password';
+                showPasswordButton.textContent = 'Mostrar';
+            }
+        });
 
-                const data = await response.json();
-
-                if (response.ok) {
-                    alert('Registro exitoso');
-                    window.location.href = 'login.html';
-                } else {
-                    //Manejo de errores de validacion
-                    if (data.errors) {
-                        alert(data.errors.map(error = error.msg).join('\n'));
-                    } else {
-                        alert(Ddata.msg || 'Error desconocido');
-                    }
-                }
-
-            } catch (error) {
-                console.error('Error:', error);
-                alert('Ocurrió un error al registrar el usuario-a');
+        showConfirmPasswordButton.addEventListener('click', () => {
+            if (confirmPasswordInput.type === 'password') {
+                confirmPasswordInput.type = 'text';
+                showConfirmPasswordButton.textContent = 'Ocultar';
+            } else {
+                confirmPasswordInput.type = 'password';
+                showConfirmPasswordButton.textContent = 'Mostrar';
             }
         });
     </script>
-</body> 
+</body>
 </html>
+
+

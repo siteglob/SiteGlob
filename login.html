@@ -22,6 +22,8 @@
                 <div class="mb-4">
                     <label class="block text-gray-700" for="password">Contraseña</label>
                     <input type="password" id="password" class="w-full p-2 border border-gray-300 rounded mt-1" required>
+                    <span class="text-gray-700 text-sm">Mostrar contraseña</span>
+                    <input type="checkbox" id="showPassword" class="ml-2">
                 </div>
                 <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Iniciar sesión</button>
             </form>
@@ -38,6 +40,16 @@
             var password = document.getElementById('password').value;
             // Redirigimos a la página de inicio
             window.location.href = 'bienvenida.html';
+        });
+
+        // Agregamos un evento de click al checkbox para mostrar la contraseña
+        document.getElementById('showPassword').addEventListener('click', function() {
+            var passwordInput = document.getElementById('password');
+            if (this.checked) {
+                passwordInput.type = 'text';
+            } else {
+                passwordInput.type = 'password';
+            }
         });
     </script>
 </body>
