@@ -32,7 +32,7 @@
 
     <script>
         document.getElementById('registerForm').addEventListener('submit', async (event) => {
-            event.preventDefault();
+            event.preventDefault();         
             
             const username = document.getElementById('username').value;
             const email = document.getElementById('email').value;
@@ -53,13 +53,19 @@
                     alert('Registro exitoso');
                     window.location.href = 'login.html';
                 } else {
-                    alert(data.message);
+                    //Manejo de errores de validacion
+                    if (data.errors) {
+                        alert(data.errors.map(error = error.msg).join('\n'));
+                    } else {
+                        alert(Ddata.msg || 'Error desconocido');
+                    }
                 }
+
             } catch (error) {
                 console.error('Error:', error);
-                alert('Ocurrió un error al registrar el usuario');
+                alert('Ocurrió un error al registrar el usuario-a');
             }
         });
     </script>
-</body>
+</body> 
 </html>
